@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-style:double;
+    border-bottom-color: #b38f00;
+}
+
+nav{
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #b38f00;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#column-1 {
+    margin-left: 100px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 200px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.Interview {
+    width: 100%;
+    border-radius: 20px;
+    border: #fff;
+    border-style:double;
+    margin-top: 70px;
+}
+
+.slider-frame {
+    overflow: hidden;
+    width: 497px;
+    margin-left: 150px;
+    margin-top: 70px;
+    border-radius: 50px;
+}
+
+/*---------- slide animation ------------*/
+
+@keyframes slide_animation{
+    0% {right: 0px;}
+    5% {right: 0px;}
+    10% {right: 507px;}
+    15% {right: 507px;}
+    20% {right: 1012px;}
+    25% {right: 1012px;}
+    30% {right: 1518px;}
+    35% {right: 1518px;}
+    40% {right: 2024px;}
+    45% {right: 2024px;}
+    50% {right: 2530px;}
+    55% {right: 2530px;}
+    60% {right: 3037px;}
+    65% {right: 3037px;}
+    70% {right: 3542px;}
+    75% {right: 3542px;}
+    80% {right: 4048px;}
+    85% {right: 4048px;}
+    90% {right: 4554px;}
+    95% {right: 4554px;}
+    100% {right: 4554px;}
+
+}
+
+.slide-images {
+    width: 6000px;
+    height:600px;
+    overflow: hidden;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-play-state:running;
+}
+
+img {
+    height: 600px;
+    width: 500px;
+    position:relative;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/*---------------- end of animation part -------------*/
+
+#column-2 {
+    margin-left: 100px;
+    margin-top: 80px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+p {
+    background-image: linear-gradient(to bottom,#fff,#b38f00,#000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#videos {
+    width: 95%;   
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+}
+
+#videos > div {
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: #fff;
+    border-style:double;
+}
+
+.video video {
+    width: 100%;
+}
+
+.detalhes {
+    display: none;
+}
+
+#videos .video:target {
+    position: fixed;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+    pad: 5px;
+    border: solid 1px #333;
+    box-shadow: 0 0 300px 350px #000;
+    background: #000;
+    border-radius: 5px;
+}
+
+.video:target .detalhes {
+    display: block;
+    float: right;
+}
+
+.banner {
+    background-image: url('../Conteudo/Thanos_on_Titan_29.webp');
+    width: 100%;
+    height: 400px;
+    margin-top: 70px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+footer {
+    border-style: double;
+    border-top-color: #b38f00;
+    height: 300px;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+    header {
+        height: 90px;
+        flex-direction: column;
+    }
+    
+    nav {
+        width: 70%;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    #column-1 {
+        margin-left: 10px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 18px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    
+    .Interview {
+        width: 96%;
+        border-radius: 20px;
+        border: #fff;
+        border-style:double;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .slider-frame {
+        overflow: hidden;
+        width: 375px;
+        margin-left: 10px;
+        margin-top: 30px;
+        border-radius: 50px;
+    }
+    
+    /*---------- slide animation ------------*/
+    
+    @keyframes slide_animation{
+        0% {right: 0px;}
+        5% {right: 0px;}
+        10% {right: 507px;}
+        15% {right: 507px;}
+        20% {right: 1012px;}
+        25% {right: 1012px;}
+        30% {right: 1518px;}
+        35% {right: 1518px;}
+        40% {right: 2024px;}
+        45% {right: 2024px;}
+        50% {right: 2530px;}
+        55% {right: 2530px;}
+        60% {right: 3037px;}
+        65% {right: 3037px;}
+        70% {right: 3542px;}
+        75% {right: 3542px;}
+        80% {right: 4048px;}
+        85% {right: 4048px;}
+        90% {right: 4554px;}
+        95% {right: 4554px;}
+        100% {right: 4554px;}
+    
+    }
+    
+    .slide-images {
+        width: 6000px;
+        height:400px;
+        overflow: hidden;
+        position: relative;
+        animation-name: slide_animation;
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+        animation-play-state:running;
+    }
+    
+    img {
+        height: 400px;
+        width: 375px;
+        position:relative;
+        cursor: pointer;
+        object-fit: cover;
+    }
+    
+    /*---------------- end of animation part -------------*/
+    
+    #column-2 {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-top: 80px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    
+    p {
+        background-image: linear-gradient(to bottom,#fff,#b38f00,#000);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #videos {
+        width: 98%;   
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 50px;
+    }
+    
+    #videos > div {
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border: #fff;
+        border-style:double;
+    }
+    
+    .video video {
+        width: 100%;
+    }
+    
+    .detalhes {
+        display: none;
+    }
+    
+    .banner {
+        background-image: url('../Conteudo/Thanos_on_Titan_29.webp');
+        width: 100%;
+        height: 400px;
+        margin-top: 70px;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+}

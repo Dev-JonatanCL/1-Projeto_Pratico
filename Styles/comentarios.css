@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-style: double;
+    border-bottom-color: #b38f00;
+}
+
+nav{
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #b38f00;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+h2>div {
+    background-image: linear-gradient(to bottom,#fff,#b38f00,#000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.critic-container {
+    width: 100%;
+    display:flex;
+    margin-top: 100px;
+    border-radius: 20px;
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p2/6262236-ceu-noturno-com-estrelas-cintilantes-sobre-fundo-preto-gratis-foto.jpg');
+}
+
+.critic-content {
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 150px;
+    column-gap: 70px;
+    border-radius: 20px;
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p2/6262236-ceu-noturno-com-estrelas-cintilantes-sobre-fundo-preto-gratis-foto.jpg');
+}
+
+.critic-content-2 {
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 150px;
+    column-gap: 70px;
+    border-radius: 20px;
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p2/6262236-ceu-noturno-com-estrelas-cintilantes-sobre-fundo-preto-gratis-foto.jpg');
+}
+
+.critic {
+    width: 100%;
+    height: 175px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 100px 40px;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: transparent;
+    background-image: url(../Conteudo/caixa-texto.png);
+}
+
+.critic-2 {
+    width: 100%;
+    height: 175px;
+    margin-left: 10px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px 100px 40px;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: transparent;
+    background-image: url(../Conteudo/caixa-texto.png);
+}
+
+#emoji-1 {
+    font-size: 40px;
+    height: 35px;
+    background-color: transparent;
+}
+
+#emoji-2 {
+    background-color: unset;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.critical {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: 220px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.critical-img {
+    margin-left: 110px;
+    margin-top: -50px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.critic-public-container {
+    width: 100%;
+    display:flex;
+    margin-top: 100px;
+    border-radius: 20px;
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p2/6262236-ceu-noturno-com-estrelas-cintilantes-sobre-fundo-preto-gratis-foto.jpg');
+}
+
+#columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+footer {
+    border-style: double;
+    border-top-color: #b38f00;
+    height: 300px;
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
