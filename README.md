@@ -1,6 +1,6 @@
 <h1 id="description" align="center">1° Projeto Prático</h1>
 
-Este é um projeto de uma página web sobre um filme, o primeiro projeto a ser desenvolvido no curso online Profissão Programador, do professor Paulo Borges. É uma página web sobre um filme, que apresenta todo o elenco, bastidores, trailer, teasers, fotos, sinopse e comentários do público e crítica.
+Este é um projeto de uma página web sobre um filme, o primeiro projeto a ser desenvolvido no curso online Profissão Programador, do professor Paulo Borges.
 
 ### Será apresentado:
 <ul>
